@@ -70,7 +70,7 @@ type GetByProjectResponse struct {
 		Default bool    `json:"default,omitempty"`
 		Id      float64 `json:"id,omitempty"`
 		Name    string  `json:"name,omitempty"`
-	} `json:"qualityGate,omitempty"`
+	} `json:"quality_gate,omitempty"`
 }
 
 // ListRequest Get a list of quality gates
@@ -86,12 +86,12 @@ type ListResponse struct {
 	Default      float64 `json:"default,omitempty"`
 	Qualitygates []struct {
 		Actions struct {
-			AssociateProjects bool `json:"associateProjects,omitempty"`
+			AssociateProjects bool `json:"associate_projects,omitempty"`
 			Copy              bool `json:"copy,omitempty"`
 			Delete            bool `json:"delete,omitempty"`
-			ManageConditions  bool `json:"manageConditions,omitempty"`
+			ManageConditions  bool `json:"manage_conditions,omitempty"`
 			Rename            bool `json:"rename,omitempty"`
-			SetAsDefault      bool `json:"setAsDefault,omitempty"`
+			SetAsDefault      bool `json:"set_as_default,omitempty"`
 		} `json:"actions,omitempty"`
 		Conditions []struct {
 			Error  string  `json:"error,omitempty"`
@@ -100,8 +100,8 @@ type ListResponse struct {
 			Op     string  `json:"op,omitempty"`
 		} `json:"conditions,omitempty"`
 		Id        float64 `json:"id,omitempty"`
-		IsBuiltIn bool    `json:"isBuiltIn,omitempty"`
-		IsDefault bool    `json:"isDefault,omitempty"`
+		IsBuiltIn bool    `json:"is_built_in,omitempty"`
+		IsDefault bool    `json:"is_default,omitempty"`
 		Name      string  `json:"name,omitempty"`
 	} `json:"qualitygates,omitempty"`
 }
@@ -119,14 +119,14 @@ type ProjectStatusRequest struct {
 type ProjectStatusResponse struct {
 	ProjectStatus struct {
 		Conditions []struct {
-			ActualValue    string  `json:"actualValue,omitempty"`
+			ActualValue    string  `json:"actual_value,omitempty"`
 			Comparator     string  `json:"comparator,omitempty"`
-			ErrorThreshold string  `json:"errorThreshold,omitempty"`
-			MetricKey      string  `json:"metricKey,omitempty"`
-			PeriodIndex    float64 `json:"periodIndex,omitempty"`
+			ErrorThreshold string  `json:"error_threshold,omitempty"`
+			MetricKey      string  `json:"metric_key,omitempty"`
+			PeriodIndex    float64 `json:"period_index,omitempty"`
 			Status         string  `json:"status,omitempty"`
 		} `json:"conditions,omitempty"`
-		IgnoredConditions bool `json:"ignoredConditions,omitempty"`
+		IgnoredConditions bool `json:"ignored_conditions,omitempty"`
 		Periods           []struct {
 			Date      string  `json:"date,omitempty"`
 			Index     float64 `json:"index,omitempty"`
@@ -134,7 +134,7 @@ type ProjectStatusResponse struct {
 			Parameter string  `json:"parameter,omitempty"`
 		} `json:"periods,omitempty"`
 		Status string `json:"status,omitempty"`
-	} `json:"projectStatus,omitempty"`
+	} `json:"project_status,omitempty"`
 }
 
 // RenameRequest Rename a Quality Gate.<br>Requires the 'Administer Quality Gates' permission.
@@ -157,8 +157,8 @@ type SearchRequest struct {
 // SearchResponse is the response for SearchRequest
 type SearchResponse struct {
 	Paging struct {
-		PageIndex float64 `json:"pageIndex,omitempty"`
-		PageSize  float64 `json:"pageSize,omitempty"`
+		PageIndex float64 `json:"page_index,omitempty"`
+		PageSize  float64 `json:"page_size,omitempty"`
 		Total     float64 `json:"total,omitempty"`
 	} `json:"paging,omitempty"`
 	Results []struct {
@@ -193,12 +193,12 @@ type ShowRequest struct {
 // ShowResponse is the response for ShowRequest
 type ShowResponse struct {
 	Actions struct {
-		AssociateProjects bool `json:"associateProjects,omitempty"`
+		AssociateProjects bool `json:"associate_projects,omitempty"`
 		Copy              bool `json:"copy,omitempty"`
 		Delete            bool `json:"delete,omitempty"`
-		ManageConditions  bool `json:"manageConditions,omitempty"`
+		ManageConditions  bool `json:"manage_conditions,omitempty"`
 		Rename            bool `json:"rename,omitempty"`
-		SetAsDefault      bool `json:"setAsDefault,omitempty"`
+		SetAsDefault      bool `json:"set_as_default,omitempty"`
 	} `json:"actions,omitempty"`
 	Conditions []struct {
 		Error  string  `json:"error,omitempty"`
@@ -207,8 +207,8 @@ type ShowResponse struct {
 		Op     string  `json:"op,omitempty"`
 	} `json:"conditions,omitempty"`
 	Id               float64 `json:"id,omitempty"`
-	IsBuiltIn        bool    `json:"isBuiltIn,omitempty"`
-	IsCleanAsYouCode bool    `json:"isCleanAsYouCode,omitempty"`
+	IsBuiltIn        bool    `json:"is_built_in,omitempty"`
+	IsCleanAsYouCode bool    `json:"is_clean_as_you_code,omitempty"`
 	Name             string  `json:"name,omitempty"`
 }
 

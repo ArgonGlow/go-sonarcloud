@@ -39,10 +39,10 @@ type DeliveriesRequest struct {
 type DeliveriesResponse struct {
 	Deliveries []struct {
 		At           string  `json:"at,omitempty"`
-		CeTaskId     string  `json:"ceTaskId,omitempty"`
-		ComponentKey string  `json:"componentKey,omitempty"`
-		DurationMs   float64 `json:"durationMs,omitempty"`
-		HttpStatus   float64 `json:"httpStatus,omitempty"`
+		CeTaskId     string  `json:"ce_task_id,omitempty"`
+		ComponentKey string  `json:"component_key,omitempty"`
+		DurationMs   float64 `json:"duration_ms,omitempty"`
+		HttpStatus   float64 `json:"http_status,omitempty"`
 		Id           string  `json:"id,omitempty"`
 		Name         string  `json:"name,omitempty"`
 		Success      bool    `json:"success,omitempty"`
@@ -60,10 +60,10 @@ func (r *DeliveriesResponse) GetPaging() *paging.Paging {
 type DeliveriesResponseAll struct {
 	Deliveries []struct {
 		At           string  `json:"at,omitempty"`
-		CeTaskId     string  `json:"ceTaskId,omitempty"`
-		ComponentKey string  `json:"componentKey,omitempty"`
-		DurationMs   float64 `json:"durationMs,omitempty"`
-		HttpStatus   float64 `json:"httpStatus,omitempty"`
+		CeTaskId     string  `json:"ce_task_id,omitempty"`
+		ComponentKey string  `json:"component_key,omitempty"`
+		DurationMs   float64 `json:"duration_ms,omitempty"`
+		HttpStatus   float64 `json:"http_status,omitempty"`
 		Id           string  `json:"id,omitempty"`
 		Name         string  `json:"name,omitempty"`
 		Success      bool    `json:"success,omitempty"`
@@ -80,10 +80,10 @@ type DeliveryRequest struct {
 type DeliveryResponse struct {
 	Delivery struct {
 		At           string  `json:"at,omitempty"`
-		CeTaskId     string  `json:"ceTaskId,omitempty"`
-		ComponentKey string  `json:"componentKey,omitempty"`
-		DurationMs   float64 `json:"durationMs,omitempty"`
-		HttpStatus   float64 `json:"httpStatus,omitempty"`
+		CeTaskId     string  `json:"ce_task_id,omitempty"`
+		ComponentKey string  `json:"component_key,omitempty"`
+		DurationMs   float64 `json:"duration_ms,omitempty"`
+		HttpStatus   float64 `json:"http_status,omitempty"`
 		Id           string  `json:"id,omitempty"`
 		Name         string  `json:"name,omitempty"`
 		Payload      string  `json:"payload,omitempty"`

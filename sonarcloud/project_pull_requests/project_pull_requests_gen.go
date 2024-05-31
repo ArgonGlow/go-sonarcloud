@@ -16,7 +16,7 @@ type ListRequest struct {
 // ListResponse is the response for ListRequest
 type ListResponse struct {
 	PullRequests []struct {
-		AnalysisDate string `json:"analysisDate,omitempty"`
+		AnalysisDate string `json:"analysis_date,omitempty"`
 		Base         string `json:"base,omitempty"`
 		Branch       string `json:"branch,omitempty"`
 		Commit       struct {
@@ -30,12 +30,12 @@ type ListResponse struct {
 		Key    string `json:"key,omitempty"`
 		Status struct {
 			Bugs              float64 `json:"bugs,omitempty"`
-			CodeSmells        float64 `json:"codeSmells,omitempty"`
-			QualityGateStatus string  `json:"qualityGateStatus,omitempty"`
+			CodeSmells        float64 `json:"code_smells,omitempty"`
+			QualityGateStatus string  `json:"quality_gate_status,omitempty"`
 			Vulnerabilities   float64 `json:"vulnerabilities,omitempty"`
 		} `json:"status,omitempty"`
 		Target string `json:"target,omitempty"`
 		Title  string `json:"title,omitempty"`
 		Url    string `json:"url,omitempty"`
-	} `json:"pullRequests,omitempty"`
+	} `json:"pull_requests,omitempty"`
 }

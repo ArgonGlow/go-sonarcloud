@@ -25,7 +25,7 @@ type ComponentResponse struct {
 			Metric  string `json:"metric,omitempty"`
 			Value   string `json:"value,omitempty"`
 			Periods []struct {
-				BestValue bool    `json:"bestValue,omitempty"`
+				BestValue bool    `json:"best_value,omitempty"`
 				Index     float64 `json:"index,omitempty"`
 				Value     string  `json:"value,omitempty"`
 			} `json:"periods,omitempty"`
@@ -39,7 +39,7 @@ type ComponentResponse struct {
 		Description           string `json:"description,omitempty"`
 		Domain                string `json:"domain,omitempty"`
 		Hidden                bool   `json:"hidden,omitempty"`
-		HigherValuesAreBetter bool   `json:"higherValuesAreBetter,omitempty"`
+		HigherValuesAreBetter bool   `json:"higher_values_are_better,omitempty"`
 		Key                   string `json:"key,omitempty"`
 		Name                  string `json:"name,omitempty"`
 		Qualitative           bool   `json:"qualitative,omitempty"`
@@ -87,7 +87,7 @@ type ComponentTreeResponse struct {
 		} `json:"measures,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
-	} `json:"baseComponent,omitempty"`
+	} `json:"base_component,omitempty"`
 	Components []struct {
 		Key      string `json:"key,omitempty"`
 		Language string `json:"language,omitempty"`
@@ -108,12 +108,12 @@ type ComponentTreeResponse struct {
 		Description           string `json:"description,omitempty"`
 		Domain                string `json:"domain,omitempty"`
 		Hidden                bool   `json:"hidden,omitempty"`
-		HigherValuesAreBetter bool   `json:"higherValuesAreBetter,omitempty"`
+		HigherValuesAreBetter bool   `json:"higher_values_are_better,omitempty"`
 		Key                   string `json:"key,omitempty"`
 		Name                  string `json:"name,omitempty"`
 		Qualitative           bool   `json:"qualitative,omitempty"`
 		Type                  string `json:"type,omitempty"`
-		BestValue             string `json:"bestValue,omitempty"`
+		BestValue             string `json:"best_value,omitempty"`
 	} `json:"metrics,omitempty"`
 	Paging  paging.Paging `json:"paging,omitempty"`
 	Periods []struct {
@@ -143,7 +143,7 @@ type ComponentTreeResponseAll struct {
 		} `json:"measures,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
-	} `json:"baseComponent,omitempty"`
+	} `json:"base_component,omitempty"`
 	Components []struct {
 		Key      string `json:"key,omitempty"`
 		Language string `json:"language,omitempty"`
@@ -164,12 +164,12 @@ type ComponentTreeResponseAll struct {
 		Description           string `json:"description,omitempty"`
 		Domain                string `json:"domain,omitempty"`
 		Hidden                bool   `json:"hidden,omitempty"`
-		HigherValuesAreBetter bool   `json:"higherValuesAreBetter,omitempty"`
+		HigherValuesAreBetter bool   `json:"higher_values_are_better,omitempty"`
 		Key                   string `json:"key,omitempty"`
 		Name                  string `json:"name,omitempty"`
 		Qualitative           bool   `json:"qualitative,omitempty"`
 		Type                  string `json:"type,omitempty"`
-		BestValue             string `json:"bestValue,omitempty"`
+		BestValue             string `json:"best_value,omitempty"`
 	} `json:"metrics,omitempty"`
 	Periods []struct {
 		Date      string  `json:"date,omitempty"`

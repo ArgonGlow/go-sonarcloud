@@ -16,7 +16,7 @@ type AddCommentResponse struct {
 	Components []struct {
 		Enabled   bool    `json:"enabled,omitempty"`
 		Key       string  `json:"key,omitempty"`
-		LongName  string  `json:"longName,omitempty"`
+		LongName  string  `json:"long_name,omitempty"`
 		Name      string  `json:"name,omitempty"`
 		Path      string  `json:"path,omitempty"`
 		Qualifier string  `json:"qualifier,omitempty"`
@@ -27,48 +27,48 @@ type AddCommentResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -91,7 +91,7 @@ type AssignResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -101,48 +101,48 @@ type AssignResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -197,15 +197,15 @@ type ChangelogRequest struct {
 type ChangelogResponse struct {
 	Changelog []struct {
 		Avatar       string `json:"avatar,omitempty"`
-		CreationDate string `json:"creationDate,omitempty"`
+		CreationDate string `json:"creation_date,omitempty"`
 		Diffs        []struct {
 			Key      string `json:"key,omitempty"`
-			NewValue string `json:"newValue,omitempty"`
-			OldValue string `json:"oldValue,omitempty"`
+			NewValue string `json:"new_value,omitempty"`
+			OldValue string `json:"old_value,omitempty"`
 		} `json:"diffs,omitempty"`
-		IsUserActive bool   `json:"isUserActive,omitempty"`
+		IsUserActive bool   `json:"is_user_active,omitempty"`
 		User         string `json:"user,omitempty"`
-		UserName     string `json:"userName,omitempty"`
+		UserName     string `json:"user_name,omitempty"`
 	} `json:"changelog,omitempty"`
 }
 
@@ -219,7 +219,7 @@ type DeleteCommentResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -229,48 +229,48 @@ type DeleteCommentResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -295,7 +295,7 @@ type DoTransitionResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -305,48 +305,48 @@ type DoTransitionResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -369,7 +369,7 @@ type EditCommentResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -379,48 +379,48 @@ type EditCommentResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -475,7 +475,7 @@ type SearchResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -483,37 +483,37 @@ type SearchResponse struct {
 	Issues []struct {
 		Actions []string `json:"actions,omitempty"`
 		Attr    struct {
-			JiraIssueKey string `json:"jira-issue-key,omitempty"`
+			JiraIssueKey string `json:"jira_issue_key,omitempty"`
 		} `json:"attr,omitempty"`
 		Author                     string `json:"author,omitempty"`
-		CleanCodeAttribute         string `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string `json:"component,omitempty"`
-		CreationDate string `json:"creationDate,omitempty"`
+		CreationDate string `json:"creation_date,omitempty"`
 		Effort       string `json:"effort,omitempty"`
 		Flows        []struct {
 			Locations []struct {
 				Msg       string `json:"msg,omitempty"`
 				TextRange struct {
-					EndLine     float64 `json:"endLine,omitempty"`
-					EndOffset   float64 `json:"endOffset,omitempty"`
-					StartLine   float64 `json:"startLine,omitempty"`
-					StartOffset float64 `json:"startOffset,omitempty"`
-				} `json:"textRange,omitempty"`
+					EndLine     float64 `json:"end_line,omitempty"`
+					EndOffset   float64 `json:"end_offset,omitempty"`
+					StartLine   float64 `json:"start_line,omitempty"`
+					StartOffset float64 `json:"start_offset,omitempty"`
+				} `json:"text_range,omitempty"`
 			} `json:"locations,omitempty"`
 		} `json:"flows,omitempty"`
 		Hash    string `json:"hash,omitempty"`
 		Impacts []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
@@ -521,25 +521,25 @@ type SearchResponse struct {
 		Project                   string   `json:"project,omitempty"`
 		Resolution                string   `json:"resolution,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issues,omitempty"`
 	Paging paging.Paging `json:"paging,omitempty"`
 	Rules  []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -561,7 +561,7 @@ type SearchResponseAll struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -569,37 +569,37 @@ type SearchResponseAll struct {
 	Issues []struct {
 		Actions []string `json:"actions,omitempty"`
 		Attr    struct {
-			JiraIssueKey string `json:"jira-issue-key,omitempty"`
+			JiraIssueKey string `json:"jira_issue_key,omitempty"`
 		} `json:"attr,omitempty"`
 		Author                     string `json:"author,omitempty"`
-		CleanCodeAttribute         string `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string `json:"component,omitempty"`
-		CreationDate string `json:"creationDate,omitempty"`
+		CreationDate string `json:"creation_date,omitempty"`
 		Effort       string `json:"effort,omitempty"`
 		Flows        []struct {
 			Locations []struct {
 				Msg       string `json:"msg,omitempty"`
 				TextRange struct {
-					EndLine     float64 `json:"endLine,omitempty"`
-					EndOffset   float64 `json:"endOffset,omitempty"`
-					StartLine   float64 `json:"startLine,omitempty"`
-					StartOffset float64 `json:"startOffset,omitempty"`
-				} `json:"textRange,omitempty"`
+					EndLine     float64 `json:"end_line,omitempty"`
+					EndOffset   float64 `json:"end_offset,omitempty"`
+					StartLine   float64 `json:"start_line,omitempty"`
+					StartOffset float64 `json:"start_offset,omitempty"`
+				} `json:"text_range,omitempty"`
 			} `json:"locations,omitempty"`
 		} `json:"flows,omitempty"`
 		Hash    string `json:"hash,omitempty"`
 		Impacts []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
@@ -607,24 +607,24 @@ type SearchResponseAll struct {
 		Project                   string   `json:"project,omitempty"`
 		Resolution                string   `json:"resolution,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issues,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -648,7 +648,7 @@ type SetSeverityResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -658,48 +658,48 @@ type SetSeverityResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -722,60 +722,60 @@ type SetTagsResponse struct {
 	Components []struct {
 		Enabled      bool    `json:"enabled,omitempty"`
 		Key          string  `json:"key,omitempty"`
-		LongName     string  `json:"longName,omitempty"`
+		LongName     string  `json:"long_name,omitempty"`
 		Name         string  `json:"name,omitempty"`
 		Path         string  `json:"path,omitempty"`
-		ProjectId    float64 `json:"projectId,omitempty"`
+		ProjectId    float64 `json:"project_id,omitempty"`
 		Qualifier    string  `json:"qualifier,omitempty"`
-		SubProjectId float64 `json:"subProjectId,omitempty"`
+		SubProjectId float64 `json:"sub_project_id,omitempty"`
 		Uuid         string  `json:"uuid,omitempty"`
 	} `json:"components,omitempty"`
 	Issue struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`
@@ -799,7 +799,7 @@ type SetTypeResponse struct {
 	Components []struct {
 		Enabled   bool   `json:"enabled,omitempty"`
 		Key       string `json:"key,omitempty"`
-		LongName  string `json:"longName,omitempty"`
+		LongName  string `json:"long_name,omitempty"`
 		Name      string `json:"name,omitempty"`
 		Path      string `json:"path,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
@@ -809,48 +809,48 @@ type SetTypeResponse struct {
 		Actions                    []string `json:"actions,omitempty"`
 		Assignee                   string   `json:"assignee,omitempty"`
 		Author                     string   `json:"author,omitempty"`
-		CleanCodeAttribute         string   `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string   `json:"cleanCodeAttributeCategory,omitempty"`
+		CleanCodeAttribute         string   `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string   `json:"clean_code_attribute_category,omitempty"`
 		Comments                   []struct {
-			CreatedAt string `json:"createdAt,omitempty"`
-			HtmlText  string `json:"htmlText,omitempty"`
+			CreatedAt string `json:"created_at,omitempty"`
+			HtmlText  string `json:"html_text,omitempty"`
 			Key       string `json:"key,omitempty"`
 			Login     string `json:"login,omitempty"`
 			Markdown  string `json:"markdown,omitempty"`
 			Updatable bool   `json:"updatable,omitempty"`
 		} `json:"comments,omitempty"`
 		Component    string   `json:"component,omitempty"`
-		CreationDate string   `json:"creationDate,omitempty"`
+		CreationDate string   `json:"creation_date,omitempty"`
 		Debt         string   `json:"debt,omitempty"`
 		Effort       string   `json:"effort,omitempty"`
 		Flows        []string `json:"flows,omitempty"`
 		Impacts      []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
 		Key                       string   `json:"key,omitempty"`
 		Line                      float64  `json:"line,omitempty"`
 		Message                   string   `json:"message,omitempty"`
 		Project                   string   `json:"project,omitempty"`
 		Rule                      string   `json:"rule,omitempty"`
-		RuleDescriptionContextKey string   `json:"ruleDescriptionContextKey,omitempty"`
+		RuleDescriptionContextKey string   `json:"rule_description_context_key,omitempty"`
 		Severity                  string   `json:"severity,omitempty"`
 		Status                    string   `json:"status,omitempty"`
 		Tags                      []string `json:"tags,omitempty"`
 		TextRange                 struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
 		Transitions []string `json:"transitions,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdateDate  string   `json:"updateDate,omitempty"`
+		UpdateDate  string   `json:"update_date,omitempty"`
 	} `json:"issue,omitempty"`
 	Rules []struct {
 		Key      string `json:"key,omitempty"`
 		Lang     string `json:"lang,omitempty"`
-		LangName string `json:"langName,omitempty"`
+		LangName string `json:"lang_name,omitempty"`
 		Name     string `json:"name,omitempty"`
 		Status   string `json:"status,omitempty"`
 	} `json:"rules,omitempty"`

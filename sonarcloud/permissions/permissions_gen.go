@@ -84,8 +84,8 @@ type CreateTemplateResponse struct {
 	PermissionTemplate struct {
 		Description       string `json:"description,omitempty"`
 		Name              string `json:"name,omitempty"`
-		ProjectKeyPattern string `json:"projectKeyPattern,omitempty"`
-	} `json:"permissionTemplate,omitempty"`
+		ProjectKeyPattern string `json:"project_key_pattern,omitempty"`
+	} `json:"permission_template,omitempty"`
 }
 
 // DeleteTemplateRequest Delete a permission template.<br />Requires the permission 'Administer' on the organization.
@@ -151,10 +151,10 @@ type SearchGlobalPermissionsRequest struct {
 type SearchGlobalPermissionsResponse struct {
 	Permissions []struct {
 		Description string  `json:"description,omitempty"`
-		GroupsCount float64 `json:"groupsCount,omitempty"`
+		GroupsCount float64 `json:"groups_count,omitempty"`
 		Key         string  `json:"key,omitempty"`
 		Name        string  `json:"name,omitempty"`
-		UsersCount  float64 `json:"usersCount,omitempty"`
+		UsersCount  float64 `json:"users_count,omitempty"`
 	} `json:"permissions,omitempty"`
 }
 
@@ -180,9 +180,9 @@ type SearchProjectPermissionsResponse struct {
 		Key         string `json:"key,omitempty"`
 		Name        string `json:"name,omitempty"`
 		Permissions []struct {
-			GroupsCount float64 `json:"groupsCount,omitempty"`
+			GroupsCount float64 `json:"groups_count,omitempty"`
 			Key         string  `json:"key,omitempty"`
-			UsersCount  float64 `json:"usersCount,omitempty"`
+			UsersCount  float64 `json:"users_count,omitempty"`
 		} `json:"permissions,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
 	} `json:"projects,omitempty"`
@@ -205,9 +205,9 @@ type SearchProjectPermissionsResponseAll struct {
 		Key         string `json:"key,omitempty"`
 		Name        string `json:"name,omitempty"`
 		Permissions []struct {
-			GroupsCount float64 `json:"groupsCount,omitempty"`
+			GroupsCount float64 `json:"groups_count,omitempty"`
 			Key         string  `json:"key,omitempty"`
-			UsersCount  float64 `json:"usersCount,omitempty"`
+			UsersCount  float64 `json:"users_count,omitempty"`
 		} `json:"permissions,omitempty"`
 		Qualifier string `json:"qualifier,omitempty"`
 	} `json:"projects,omitempty"`
@@ -238,11 +238,11 @@ type UpdateTemplateRequest struct {
 // UpdateTemplateResponse is the response for UpdateTemplateRequest
 type UpdateTemplateResponse struct {
 	PermissionTemplate struct {
-		CreatedAt         string `json:"createdAt,omitempty"`
+		CreatedAt         string `json:"created_at,omitempty"`
 		Description       string `json:"description,omitempty"`
 		Id                string `json:"id,omitempty"`
 		Name              string `json:"name,omitempty"`
-		ProjectKeyPattern string `json:"projectKeyPattern,omitempty"`
-		UpdatedAt         string `json:"updatedAt,omitempty"`
-	} `json:"permissionTemplate,omitempty"`
+		ProjectKeyPattern string `json:"project_key_pattern,omitempty"`
+		UpdatedAt         string `json:"updated_at,omitempty"`
+	} `json:"permission_template,omitempty"`
 }

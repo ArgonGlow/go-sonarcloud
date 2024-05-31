@@ -17,25 +17,25 @@ type ActivityRequest struct {
 // ActivityResponse is the response for ActivityRequest
 type ActivityResponse struct {
 	Tasks []struct {
-		AnalysisId         string  `json:"analysisId,omitempty"`
-		ComponentId        string  `json:"componentId,omitempty"`
-		ComponentKey       string  `json:"componentKey,omitempty"`
-		ComponentName      string  `json:"componentName,omitempty"`
-		ComponentQualifier string  `json:"componentQualifier,omitempty"`
-		ExecutedAt         string  `json:"executedAt,omitempty"`
-		ExecutionTimeMs    float64 `json:"executionTimeMs,omitempty"`
-		HasErrorStacktrace bool    `json:"hasErrorStacktrace,omitempty"`
-		HasScannerContext  bool    `json:"hasScannerContext,omitempty"`
+		AnalysisId         string  `json:"analysis_id,omitempty"`
+		ComponentId        string  `json:"component_id,omitempty"`
+		ComponentKey       string  `json:"component_key,omitempty"`
+		ComponentName      string  `json:"component_name,omitempty"`
+		ComponentQualifier string  `json:"component_qualifier,omitempty"`
+		ExecutedAt         string  `json:"executed_at,omitempty"`
+		ExecutionTimeMs    float64 `json:"execution_time_ms,omitempty"`
+		HasErrorStacktrace bool    `json:"has_error_stacktrace,omitempty"`
+		HasScannerContext  bool    `json:"has_scanner_context,omitempty"`
 		Id                 string  `json:"id,omitempty"`
 		Logs               bool    `json:"logs,omitempty"`
 		Organization       string  `json:"organization,omitempty"`
-		StartedAt          string  `json:"startedAt,omitempty"`
+		StartedAt          string  `json:"started_at,omitempty"`
 		Status             string  `json:"status,omitempty"`
-		SubmittedAt        string  `json:"submittedAt,omitempty"`
-		SubmitterLogin     string  `json:"submitterLogin,omitempty"`
+		SubmittedAt        string  `json:"submitted_at,omitempty"`
+		SubmitterLogin     string  `json:"submitter_login,omitempty"`
 		Type               string  `json:"type,omitempty"`
-		ErrorMessage       string  `json:"errorMessage,omitempty"`
-		TaskType           string  `json:"taskType,omitempty"`
+		ErrorMessage       string  `json:"error_message,omitempty"`
+		TaskType           string  `json:"task_type,omitempty"`
 	} `json:"tasks,omitempty"`
 }
 
@@ -48,9 +48,9 @@ type ActivityStatusRequest struct {
 // ActivityStatusResponse is the response for ActivityStatusRequest
 type ActivityStatusResponse struct {
 	Failing     float64 `json:"failing,omitempty"`
-	InProgress  float64 `json:"inProgress,omitempty"`
+	InProgress  float64 `json:"in_progress,omitempty"`
 	Pending     float64 `json:"pending,omitempty"`
-	PendingTime float64 `json:"pendingTime,omitempty"`
+	PendingTime float64 `json:"pending_time,omitempty"`
 }
 
 // ComponentRequest Get the pending tasks, in-progress tasks and the last executed task of a given component (usually a project).<br>Requires the following permission: 'Browse' on the specified component.<br>Either 'componentId' or 'component' must be provided.
@@ -62,35 +62,35 @@ type ComponentRequest struct {
 // ComponentResponse is the response for ComponentRequest
 type ComponentResponse struct {
 	Current struct {
-		AnalysisId         string  `json:"analysisId,omitempty"`
-		ComponentId        string  `json:"componentId,omitempty"`
-		ComponentKey       string  `json:"componentKey,omitempty"`
-		ComponentName      string  `json:"componentName,omitempty"`
-		ComponentQualifier string  `json:"componentQualifier,omitempty"`
-		ErrorMessage       string  `json:"errorMessage,omitempty"`
-		ErrorType          string  `json:"errorType,omitempty"`
-		ExecutionTimeMs    float64 `json:"executionTimeMs,omitempty"`
-		FinishedAt         string  `json:"finishedAt,omitempty"`
-		HasErrorStacktrace bool    `json:"hasErrorStacktrace,omitempty"`
-		HasScannerContext  bool    `json:"hasScannerContext,omitempty"`
+		AnalysisId         string  `json:"analysis_id,omitempty"`
+		ComponentId        string  `json:"component_id,omitempty"`
+		ComponentKey       string  `json:"component_key,omitempty"`
+		ComponentName      string  `json:"component_name,omitempty"`
+		ComponentQualifier string  `json:"component_qualifier,omitempty"`
+		ErrorMessage       string  `json:"error_message,omitempty"`
+		ErrorType          string  `json:"error_type,omitempty"`
+		ExecutionTimeMs    float64 `json:"execution_time_ms,omitempty"`
+		FinishedAt         string  `json:"finished_at,omitempty"`
+		HasErrorStacktrace bool    `json:"has_error_stacktrace,omitempty"`
+		HasScannerContext  bool    `json:"has_scanner_context,omitempty"`
 		Id                 string  `json:"id,omitempty"`
 		Logs               bool    `json:"logs,omitempty"`
 		Organization       string  `json:"organization,omitempty"`
-		StartedAt          string  `json:"startedAt,omitempty"`
+		StartedAt          string  `json:"started_at,omitempty"`
 		Status             string  `json:"status,omitempty"`
-		SubmittedAt        string  `json:"submittedAt,omitempty"`
+		SubmittedAt        string  `json:"submitted_at,omitempty"`
 		Type               string  `json:"type,omitempty"`
 	} `json:"current,omitempty"`
 	Queue []struct {
-		ComponentId        string `json:"componentId,omitempty"`
-		ComponentKey       string `json:"componentKey,omitempty"`
-		ComponentName      string `json:"componentName,omitempty"`
-		ComponentQualifier string `json:"componentQualifier,omitempty"`
+		ComponentId        string `json:"component_id,omitempty"`
+		ComponentKey       string `json:"component_key,omitempty"`
+		ComponentName      string `json:"component_name,omitempty"`
+		ComponentQualifier string `json:"component_qualifier,omitempty"`
 		Id                 string `json:"id,omitempty"`
 		Logs               bool   `json:"logs,omitempty"`
 		Organization       string `json:"organization,omitempty"`
 		Status             string `json:"status,omitempty"`
-		SubmittedAt        string `json:"submittedAt,omitempty"`
+		SubmittedAt        string `json:"submitted_at,omitempty"`
 		Type               string `json:"type,omitempty"`
 	} `json:"queue,omitempty"`
 }
@@ -104,24 +104,24 @@ type TaskRequest struct {
 // TaskResponse is the response for TaskRequest
 type TaskResponse struct {
 	Task struct {
-		AnalysisId         string  `json:"analysisId,omitempty"`
-		ComponentId        string  `json:"componentId,omitempty"`
-		ComponentKey       string  `json:"componentKey,omitempty"`
-		ComponentName      string  `json:"componentName,omitempty"`
-		ComponentQualifier string  `json:"componentQualifier,omitempty"`
-		ErrorMessage       string  `json:"errorMessage,omitempty"`
-		ErrorStacktrace    string  `json:"errorStacktrace,omitempty"`
-		ExecutedAt         string  `json:"executedAt,omitempty"`
-		ExecutionTimeMs    float64 `json:"executionTimeMs,omitempty"`
-		HasErrorStacktrace bool    `json:"hasErrorStacktrace,omitempty"`
-		HasScannerContext  bool    `json:"hasScannerContext,omitempty"`
+		AnalysisId         string  `json:"analysis_id,omitempty"`
+		ComponentId        string  `json:"component_id,omitempty"`
+		ComponentKey       string  `json:"component_key,omitempty"`
+		ComponentName      string  `json:"component_name,omitempty"`
+		ComponentQualifier string  `json:"component_qualifier,omitempty"`
+		ErrorMessage       string  `json:"error_message,omitempty"`
+		ErrorStacktrace    string  `json:"error_stacktrace,omitempty"`
+		ExecutedAt         string  `json:"executed_at,omitempty"`
+		ExecutionTimeMs    float64 `json:"execution_time_ms,omitempty"`
+		HasErrorStacktrace bool    `json:"has_error_stacktrace,omitempty"`
+		HasScannerContext  bool    `json:"has_scanner_context,omitempty"`
 		Id                 string  `json:"id,omitempty"`
 		Logs               bool    `json:"logs,omitempty"`
 		Organization       string  `json:"organization,omitempty"`
-		ScannerContext     string  `json:"scannerContext,omitempty"`
-		StartedAt          string  `json:"startedAt,omitempty"`
+		ScannerContext     string  `json:"scanner_context,omitempty"`
+		StartedAt          string  `json:"started_at,omitempty"`
 		Status             string  `json:"status,omitempty"`
-		SubmittedAt        string  `json:"submittedAt,omitempty"`
+		SubmittedAt        string  `json:"submitted_at,omitempty"`
 		Type               string  `json:"type,omitempty"`
 	} `json:"task,omitempty"`
 }

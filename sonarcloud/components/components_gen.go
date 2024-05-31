@@ -48,7 +48,7 @@ type ShowRequest struct {
 // ShowResponse is the response for ShowRequest
 type ShowResponse struct {
 	Ancestors []struct {
-		AnalysisDate string   `json:"analysisDate,omitempty"`
+		AnalysisDate string   `json:"analysis_date,omitempty"`
 		Key          string   `json:"key,omitempty"`
 		Name         string   `json:"name,omitempty"`
 		Organization string   `json:"organization,omitempty"`
@@ -60,10 +60,10 @@ type ShowResponse struct {
 		Visibility   string   `json:"visibility,omitempty"`
 	} `json:"ancestors,omitempty"`
 	Component struct {
-		AnalysisDate   string `json:"analysisDate,omitempty"`
+		AnalysisDate   string `json:"analysis_date,omitempty"`
 		Key            string `json:"key,omitempty"`
 		Language       string `json:"language,omitempty"`
-		LeakPeriodDate string `json:"leakPeriodDate,omitempty"`
+		LeakPeriodDate string `json:"leak_period_date,omitempty"`
 		Name           string `json:"name,omitempty"`
 		Organization   string `json:"organization,omitempty"`
 		Path           string `json:"path,omitempty"`
@@ -93,7 +93,7 @@ type TreeResponse struct {
 		Qualifier    string   `json:"qualifier,omitempty"`
 		Tags         []string `json:"tags,omitempty"`
 		Visibility   string   `json:"visibility,omitempty"`
-	} `json:"baseComponent,omitempty"`
+	} `json:"base_component,omitempty"`
 	Components []struct {
 		Key          string `json:"key,omitempty"`
 		Language     string `json:"language,omitempty"`
@@ -119,7 +119,7 @@ type TreeResponseAll struct {
 		Qualifier    string   `json:"qualifier,omitempty"`
 		Tags         []string `json:"tags,omitempty"`
 		Visibility   string   `json:"visibility,omitempty"`
-	} `json:"baseComponent,omitempty"`
+	} `json:"base_component,omitempty"`
 	Components []struct {
 		Key          string `json:"key,omitempty"`
 		Language     string `json:"language,omitempty"`

@@ -43,7 +43,7 @@ type SearchRequest struct {
 // SearchResponse is the response for SearchRequest
 type SearchResponse struct {
 	Analyses []struct {
-		BuildString string `json:"buildString,omitempty"`
+		BuildString string `json:"build_string,omitempty"`
 		Date        string `json:"date,omitempty"`
 		Events      []struct {
 			Category string `json:"category,omitempty"`
@@ -51,8 +51,8 @@ type SearchResponse struct {
 			Name     string `json:"name,omitempty"`
 		} `json:"events,omitempty"`
 		Key                         string `json:"key,omitempty"`
-		ManualNewCodePeriodBaseline bool   `json:"manualNewCodePeriodBaseline,omitempty"`
-		ProjectVersion              string `json:"projectVersion,omitempty"`
+		ManualNewCodePeriodBaseline bool   `json:"manual_new_code_period_baseline,omitempty"`
+		ProjectVersion              string `json:"project_version,omitempty"`
 		Revision                    string `json:"revision,omitempty"`
 	} `json:"analyses,omitempty"`
 	Paging paging.Paging `json:"paging,omitempty"`
@@ -66,7 +66,7 @@ func (r *SearchResponse) GetPaging() *paging.Paging {
 // SearchResponseAll is the collection for SearchRequest
 type SearchResponseAll struct {
 	Analyses []struct {
-		BuildString string `json:"buildString,omitempty"`
+		BuildString string `json:"build_string,omitempty"`
 		Date        string `json:"date,omitempty"`
 		Events      []struct {
 			Category string `json:"category,omitempty"`
@@ -74,8 +74,8 @@ type SearchResponseAll struct {
 			Name     string `json:"name,omitempty"`
 		} `json:"events,omitempty"`
 		Key                         string `json:"key,omitempty"`
-		ManualNewCodePeriodBaseline bool   `json:"manualNewCodePeriodBaseline,omitempty"`
-		ProjectVersion              string `json:"projectVersion,omitempty"`
+		ManualNewCodePeriodBaseline bool   `json:"manual_new_code_period_baseline,omitempty"`
+		ProjectVersion              string `json:"project_version,omitempty"`
 		Revision                    string `json:"revision,omitempty"`
 	} `json:"analyses,omitempty"`
 }

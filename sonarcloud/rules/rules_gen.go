@@ -61,27 +61,27 @@ type SearchResponse struct {
 				Key   string `json:"key,omitempty"`
 				Value string `json:"value,omitempty"`
 			} `json:"params,omitempty"`
-			QProfile string `json:"qProfile,omitempty"`
+			QProfile string `json:"q_profile,omitempty"`
 			Severity string `json:"severity,omitempty"`
-		} `json:"squid:ClassCyclomaticComplexity,omitempty"`
+		} `json:"squid:class_cyclomatic_complexity,omitempty"`
 		SquidMethodCyclomaticComplexity []struct {
 			Inherit string `json:"inherit,omitempty"`
 			Params  []struct {
 				Key   string `json:"key,omitempty"`
 				Value string `json:"value,omitempty"`
 			} `json:"params,omitempty"`
-			QProfile string `json:"qProfile,omitempty"`
+			QProfile string `json:"q_profile,omitempty"`
 			Severity string `json:"severity,omitempty"`
-		} `json:"squid:MethodCyclomaticComplexity,omitempty"`
+		} `json:"squid:method_cyclomatic_complexity,omitempty"`
 		SquidS1067 []struct {
 			Inherit string `json:"inherit,omitempty"`
 			Params  []struct {
 				Key   string `json:"key,omitempty"`
 				Value string `json:"value,omitempty"`
 			} `json:"params,omitempty"`
-			QProfile string `json:"qProfile,omitempty"`
+			QProfile string `json:"q_profile,omitempty"`
 			Severity string `json:"severity,omitempty"`
-		} `json:"squid:S1067,omitempty"`
+		} `json:"squid:s_1067,omitempty"`
 	} `json:"actives,omitempty"`
 	Facets []struct {
 		Name   string `json:"name,omitempty"`
@@ -93,25 +93,25 @@ type SearchResponse struct {
 	P     float64 `json:"p,omitempty"`
 	Ps    float64 `json:"ps,omitempty"`
 	Rules []struct {
-		CreatedAt           string `json:"createdAt,omitempty"`
+		CreatedAt           string `json:"created_at,omitempty"`
 		DescriptionSections []struct {
 			Content string `json:"content,omitempty"`
 			Key     string `json:"key,omitempty"`
 			Context struct {
-				DisplayName string `json:"displayName,omitempty"`
+				DisplayName string `json:"display_name,omitempty"`
 				Key         string `json:"key,omitempty"`
 			} `json:"context,omitempty"`
-		} `json:"descriptionSections,omitempty"`
-		HtmlDesc    string `json:"htmlDesc,omitempty"`
-		InternalKey string `json:"internalKey,omitempty"`
-		IsExternal  bool   `json:"isExternal,omitempty"`
-		IsTemplate  bool   `json:"isTemplate,omitempty"`
+		} `json:"description_sections,omitempty"`
+		HtmlDesc    string `json:"html_desc,omitempty"`
+		InternalKey string `json:"internal_key,omitempty"`
+		IsExternal  bool   `json:"is_external,omitempty"`
+		IsTemplate  bool   `json:"is_template,omitempty"`
 		Key         string `json:"key,omitempty"`
 		Lang        string `json:"lang,omitempty"`
-		LangName    string `json:"langName,omitempty"`
+		LangName    string `json:"lang_name,omitempty"`
 		Name        string `json:"name,omitempty"`
 		Params      []struct {
-			DefaultValue string `json:"defaultValue,omitempty"`
+			DefaultValue string `json:"default_value,omitempty"`
 			Desc         string `json:"desc,omitempty"`
 			Key          string `json:"key,omitempty"`
 		} `json:"params,omitempty"`
@@ -119,14 +119,14 @@ type SearchResponse struct {
 		Scope       string   `json:"scope,omitempty"`
 		Severity    string   `json:"severity,omitempty"`
 		Status      string   `json:"status,omitempty"`
-		SysTags     []string `json:"sysTags,omitempty"`
+		SysTags     []string `json:"sys_tags,omitempty"`
 		Tags        []string `json:"tags,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdatedAt   string   `json:"updatedAt,omitempty"`
-		HtmlNote    string   `json:"htmlNote,omitempty"`
-		MdNote      string   `json:"mdNote,omitempty"`
-		NoteLogin   string   `json:"noteLogin,omitempty"`
-		TemplateKey string   `json:"templateKey,omitempty"`
+		UpdatedAt   string   `json:"updated_at,omitempty"`
+		HtmlNote    string   `json:"html_note,omitempty"`
+		MdNote      string   `json:"md_note,omitempty"`
+		NoteLogin   string   `json:"note_login,omitempty"`
+		TemplateKey string   `json:"template_key,omitempty"`
 	} `json:"rules,omitempty"`
 	Total float64 `json:"total,omitempty"`
 }
@@ -150,27 +150,27 @@ type SearchResponseAll struct {
 				Key   string `json:"key,omitempty"`
 				Value string `json:"value,omitempty"`
 			} `json:"params,omitempty"`
-			QProfile string `json:"qProfile,omitempty"`
+			QProfile string `json:"q_profile,omitempty"`
 			Severity string `json:"severity,omitempty"`
-		} `json:"squid:ClassCyclomaticComplexity,omitempty"`
+		} `json:"squid:class_cyclomatic_complexity,omitempty"`
 		SquidMethodCyclomaticComplexity []struct {
 			Inherit string `json:"inherit,omitempty"`
 			Params  []struct {
 				Key   string `json:"key,omitempty"`
 				Value string `json:"value,omitempty"`
 			} `json:"params,omitempty"`
-			QProfile string `json:"qProfile,omitempty"`
+			QProfile string `json:"q_profile,omitempty"`
 			Severity string `json:"severity,omitempty"`
-		} `json:"squid:MethodCyclomaticComplexity,omitempty"`
+		} `json:"squid:method_cyclomatic_complexity,omitempty"`
 		SquidS1067 []struct {
 			Inherit string `json:"inherit,omitempty"`
 			Params  []struct {
 				Key   string `json:"key,omitempty"`
 				Value string `json:"value,omitempty"`
 			} `json:"params,omitempty"`
-			QProfile string `json:"qProfile,omitempty"`
+			QProfile string `json:"q_profile,omitempty"`
 			Severity string `json:"severity,omitempty"`
-		} `json:"squid:S1067,omitempty"`
+		} `json:"squid:s_1067,omitempty"`
 	} `json:"actives,omitempty"`
 	Facets []struct {
 		Name   string `json:"name,omitempty"`
@@ -180,25 +180,25 @@ type SearchResponseAll struct {
 		} `json:"values,omitempty"`
 	} `json:"facets,omitempty"`
 	Rules []struct {
-		CreatedAt           string `json:"createdAt,omitempty"`
+		CreatedAt           string `json:"created_at,omitempty"`
 		DescriptionSections []struct {
 			Content string `json:"content,omitempty"`
 			Key     string `json:"key,omitempty"`
 			Context struct {
-				DisplayName string `json:"displayName,omitempty"`
+				DisplayName string `json:"display_name,omitempty"`
 				Key         string `json:"key,omitempty"`
 			} `json:"context,omitempty"`
-		} `json:"descriptionSections,omitempty"`
-		HtmlDesc    string `json:"htmlDesc,omitempty"`
-		InternalKey string `json:"internalKey,omitempty"`
-		IsExternal  bool   `json:"isExternal,omitempty"`
-		IsTemplate  bool   `json:"isTemplate,omitempty"`
+		} `json:"description_sections,omitempty"`
+		HtmlDesc    string `json:"html_desc,omitempty"`
+		InternalKey string `json:"internal_key,omitempty"`
+		IsExternal  bool   `json:"is_external,omitempty"`
+		IsTemplate  bool   `json:"is_template,omitempty"`
 		Key         string `json:"key,omitempty"`
 		Lang        string `json:"lang,omitempty"`
-		LangName    string `json:"langName,omitempty"`
+		LangName    string `json:"lang_name,omitempty"`
 		Name        string `json:"name,omitempty"`
 		Params      []struct {
-			DefaultValue string `json:"defaultValue,omitempty"`
+			DefaultValue string `json:"default_value,omitempty"`
 			Desc         string `json:"desc,omitempty"`
 			Key          string `json:"key,omitempty"`
 		} `json:"params,omitempty"`
@@ -206,14 +206,14 @@ type SearchResponseAll struct {
 		Scope       string   `json:"scope,omitempty"`
 		Severity    string   `json:"severity,omitempty"`
 		Status      string   `json:"status,omitempty"`
-		SysTags     []string `json:"sysTags,omitempty"`
+		SysTags     []string `json:"sys_tags,omitempty"`
 		Tags        []string `json:"tags,omitempty"`
 		Type        string   `json:"type,omitempty"`
-		UpdatedAt   string   `json:"updatedAt,omitempty"`
-		HtmlNote    string   `json:"htmlNote,omitempty"`
-		MdNote      string   `json:"mdNote,omitempty"`
-		NoteLogin   string   `json:"noteLogin,omitempty"`
-		TemplateKey string   `json:"templateKey,omitempty"`
+		UpdatedAt   string   `json:"updated_at,omitempty"`
+		HtmlNote    string   `json:"html_note,omitempty"`
+		MdNote      string   `json:"md_note,omitempty"`
+		NoteLogin   string   `json:"note_login,omitempty"`
+		TemplateKey string   `json:"template_key,omitempty"`
 	} `json:"rules,omitempty"`
 }
 
@@ -228,53 +228,53 @@ type ShowRequest struct {
 type ShowResponse struct {
 	Actives []string `json:"actives,omitempty"`
 	Rule    struct {
-		CleanCodeAttribute         string `json:"cleanCodeAttribute,omitempty"`
-		CleanCodeAttributeCategory string `json:"cleanCodeAttributeCategory,omitempty"`
-		CreatedAt                  string `json:"createdAt,omitempty"`
-		DebtOverloaded             bool   `json:"debtOverloaded,omitempty"`
-		DebtRemFnCoeff             string `json:"debtRemFnCoeff,omitempty"`
-		DebtRemFnOffset            string `json:"debtRemFnOffset,omitempty"`
-		DebtRemFnType              string `json:"debtRemFnType,omitempty"`
-		DefaultDebtRemFnCoeff      string `json:"defaultDebtRemFnCoeff,omitempty"`
-		DefaultDebtRemFnOffset     string `json:"defaultDebtRemFnOffset,omitempty"`
-		DefaultDebtRemFnType       string `json:"defaultDebtRemFnType,omitempty"`
-		DefaultRemFnBaseEffort     string `json:"defaultRemFnBaseEffort,omitempty"`
-		DefaultRemFnGapMultiplier  string `json:"defaultRemFnGapMultiplier,omitempty"`
-		DefaultRemFnType           string `json:"defaultRemFnType,omitempty"`
+		CleanCodeAttribute         string `json:"clean_code_attribute,omitempty"`
+		CleanCodeAttributeCategory string `json:"clean_code_attribute_category,omitempty"`
+		CreatedAt                  string `json:"created_at,omitempty"`
+		DebtOverloaded             bool   `json:"debt_overloaded,omitempty"`
+		DebtRemFnCoeff             string `json:"debt_rem_fn_coeff,omitempty"`
+		DebtRemFnOffset            string `json:"debt_rem_fn_offset,omitempty"`
+		DebtRemFnType              string `json:"debt_rem_fn_type,omitempty"`
+		DefaultDebtRemFnCoeff      string `json:"default_debt_rem_fn_coeff,omitempty"`
+		DefaultDebtRemFnOffset     string `json:"default_debt_rem_fn_offset,omitempty"`
+		DefaultDebtRemFnType       string `json:"default_debt_rem_fn_type,omitempty"`
+		DefaultRemFnBaseEffort     string `json:"default_rem_fn_base_effort,omitempty"`
+		DefaultRemFnGapMultiplier  string `json:"default_rem_fn_gap_multiplier,omitempty"`
+		DefaultRemFnType           string `json:"default_rem_fn_type,omitempty"`
 		DescriptionSections        []struct {
 			Content string `json:"content,omitempty"`
 			Key     string `json:"key,omitempty"`
-		} `json:"descriptionSections,omitempty"`
-		EducationPrinciples    []string `json:"educationPrinciples,omitempty"`
-		EffortToFixDescription string   `json:"effortToFixDescription,omitempty"`
-		GapDescription         string   `json:"gapDescription,omitempty"`
-		HtmlDesc               string   `json:"htmlDesc,omitempty"`
+		} `json:"description_sections,omitempty"`
+		EducationPrinciples    []string `json:"education_principles,omitempty"`
+		EffortToFixDescription string   `json:"effort_to_fix_description,omitempty"`
+		GapDescription         string   `json:"gap_description,omitempty"`
+		HtmlDesc               string   `json:"html_desc,omitempty"`
 		Impacts                []struct {
 			Severity        string `json:"severity,omitempty"`
-			SoftwareQuality string `json:"softwareQuality,omitempty"`
+			SoftwareQuality string `json:"software_quality,omitempty"`
 		} `json:"impacts,omitempty"`
-		IsExternal bool   `json:"isExternal,omitempty"`
-		IsTemplate bool   `json:"isTemplate,omitempty"`
+		IsExternal bool   `json:"is_external,omitempty"`
+		IsTemplate bool   `json:"is_template,omitempty"`
 		Key        string `json:"key,omitempty"`
 		Lang       string `json:"lang,omitempty"`
-		LangName   string `json:"langName,omitempty"`
-		MdDesc     string `json:"mdDesc,omitempty"`
+		LangName   string `json:"lang_name,omitempty"`
+		MdDesc     string `json:"md_desc,omitempty"`
 		Name       string `json:"name,omitempty"`
 		Params     []struct {
-			DefaultValue string `json:"defaultValue,omitempty"`
-			HtmlDesc     string `json:"htmlDesc,omitempty"`
+			DefaultValue string `json:"default_value,omitempty"`
+			HtmlDesc     string `json:"html_desc,omitempty"`
 			Key          string `json:"key,omitempty"`
 			Type         string `json:"type,omitempty"`
 		} `json:"params,omitempty"`
-		RemFnBaseEffort    string   `json:"remFnBaseEffort,omitempty"`
-		RemFnGapMultiplier string   `json:"remFnGapMultiplier,omitempty"`
-		RemFnOverloaded    bool     `json:"remFnOverloaded,omitempty"`
-		RemFnType          string   `json:"remFnType,omitempty"`
+		RemFnBaseEffort    string   `json:"rem_fn_base_effort,omitempty"`
+		RemFnGapMultiplier string   `json:"rem_fn_gap_multiplier,omitempty"`
+		RemFnOverloaded    bool     `json:"rem_fn_overloaded,omitempty"`
+		RemFnType          string   `json:"rem_fn_type,omitempty"`
 		Repo               string   `json:"repo,omitempty"`
 		Scope              string   `json:"scope,omitempty"`
 		Severity           string   `json:"severity,omitempty"`
 		Status             string   `json:"status,omitempty"`
-		SysTags            []string `json:"sysTags,omitempty"`
+		SysTags            []string `json:"sys_tags,omitempty"`
 		Tags               []string `json:"tags,omitempty"`
 		Type               string   `json:"type,omitempty"`
 	} `json:"rule,omitempty"`
@@ -311,30 +311,30 @@ type UpdateRequest struct {
 // UpdateResponse is the response for UpdateRequest
 type UpdateResponse struct {
 	Rule struct {
-		CreatedAt      string `json:"createdAt,omitempty"`
-		DebtOverloaded bool   `json:"debtOverloaded,omitempty"`
-		HtmlDesc       string `json:"htmlDesc,omitempty"`
-		IsExternal     bool   `json:"isExternal,omitempty"`
-		IsTemplate     bool   `json:"isTemplate,omitempty"`
+		CreatedAt      string `json:"created_at,omitempty"`
+		DebtOverloaded bool   `json:"debt_overloaded,omitempty"`
+		HtmlDesc       string `json:"html_desc,omitempty"`
+		IsExternal     bool   `json:"is_external,omitempty"`
+		IsTemplate     bool   `json:"is_template,omitempty"`
 		Key            string `json:"key,omitempty"`
 		Lang           string `json:"lang,omitempty"`
-		LangName       string `json:"langName,omitempty"`
-		MdDesc         string `json:"mdDesc,omitempty"`
+		LangName       string `json:"lang_name,omitempty"`
+		MdDesc         string `json:"md_desc,omitempty"`
 		Name           string `json:"name,omitempty"`
 		Params         []struct {
-			DefaultValue string `json:"defaultValue,omitempty"`
-			HtmlDesc     string `json:"htmlDesc,omitempty"`
+			DefaultValue string `json:"default_value,omitempty"`
+			HtmlDesc     string `json:"html_desc,omitempty"`
 			Key          string `json:"key,omitempty"`
 			Type         string `json:"type,omitempty"`
 		} `json:"params,omitempty"`
-		RemFnOverloaded bool     `json:"remFnOverloaded,omitempty"`
+		RemFnOverloaded bool     `json:"rem_fn_overloaded,omitempty"`
 		Repo            string   `json:"repo,omitempty"`
 		Scope           string   `json:"scope,omitempty"`
 		Severity        string   `json:"severity,omitempty"`
 		Status          string   `json:"status,omitempty"`
-		SysTags         []string `json:"sysTags,omitempty"`
+		SysTags         []string `json:"sys_tags,omitempty"`
 		Tags            []string `json:"tags,omitempty"`
-		TemplateKey     string   `json:"templateKey,omitempty"`
+		TemplateKey     string   `json:"template_key,omitempty"`
 		Type            string   `json:"type,omitempty"`
 	} `json:"rule,omitempty"`
 }

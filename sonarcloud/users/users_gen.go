@@ -53,14 +53,14 @@ type SearchResponse struct {
 		Active           bool     `json:"active,omitempty"`
 		Avatar           string   `json:"avatar,omitempty"`
 		Email            string   `json:"email,omitempty"`
-		ExternalIdentity string   `json:"externalIdentity,omitempty"`
-		ExternalProvider string   `json:"externalProvider,omitempty"`
+		ExternalIdentity string   `json:"external_identity,omitempty"`
+		ExternalProvider string   `json:"external_provider,omitempty"`
 		Groups           []string `json:"groups,omitempty"`
 		Local            bool     `json:"local,omitempty"`
 		Login            string   `json:"login,omitempty"`
 		Name             string   `json:"name,omitempty"`
-		TokensCount      float64  `json:"tokensCount,omitempty"`
-		ScmAccounts      []string `json:"scmAccounts,omitempty"`
+		TokensCount      float64  `json:"tokens_count,omitempty"`
+		ScmAccounts      []string `json:"scm_accounts,omitempty"`
 	} `json:"users,omitempty"`
 }
 
@@ -75,13 +75,13 @@ type SearchResponseAll struct {
 		Active           bool     `json:"active,omitempty"`
 		Avatar           string   `json:"avatar,omitempty"`
 		Email            string   `json:"email,omitempty"`
-		ExternalIdentity string   `json:"externalIdentity,omitempty"`
-		ExternalProvider string   `json:"externalProvider,omitempty"`
+		ExternalIdentity string   `json:"external_identity,omitempty"`
+		ExternalProvider string   `json:"external_provider,omitempty"`
 		Groups           []string `json:"groups,omitempty"`
 		Local            bool     `json:"local,omitempty"`
 		Login            string   `json:"login,omitempty"`
 		Name             string   `json:"name,omitempty"`
-		TokensCount      float64  `json:"tokensCount,omitempty"`
-		ScmAccounts      []string `json:"scmAccounts,omitempty"`
+		TokensCount      float64  `json:"tokens_count,omitempty"`
+		ScmAccounts      []string `json:"scm_accounts,omitempty"`
 	} `json:"users,omitempty"`
 }

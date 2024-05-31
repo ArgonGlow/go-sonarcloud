@@ -19,25 +19,25 @@ type ListRequest struct {
 type ListResponse struct {
 	Channels    []string `json:"channels,omitempty"`
 	GlobalTypes []struct {
-		IsVisibleOnlyForOrgMembers bool   `json:"isVisibleOnlyForOrgMembers,omitempty"`
+		IsVisibleOnlyForOrgMembers bool   `json:"is_visible_only_for_org_members,omitempty"`
 		Key                        string `json:"key,omitempty"`
-	} `json:"globalTypes,omitempty"`
+	} `json:"global_types,omitempty"`
 	Notifications []struct {
 		Channel      string `json:"channel,omitempty"`
 		Type         string `json:"type,omitempty"`
 		Organization string `json:"organization,omitempty"`
 		Project      string `json:"project,omitempty"`
-		ProjectName  string `json:"projectName,omitempty"`
+		ProjectName  string `json:"project_name,omitempty"`
 	} `json:"notifications,omitempty"`
 	Organizations []struct {
-		IsMember bool   `json:"isMember,omitempty"`
+		IsMember bool   `json:"is_member,omitempty"`
 		Key      string `json:"key,omitempty"`
 		Name     string `json:"name,omitempty"`
 	} `json:"organizations,omitempty"`
 	PerProjectTypes []struct {
-		IsVisibleOnlyForOrgMembers bool   `json:"isVisibleOnlyForOrgMembers,omitempty"`
+		IsVisibleOnlyForOrgMembers bool   `json:"is_visible_only_for_org_members,omitempty"`
 		Key                        string `json:"key,omitempty"`
-	} `json:"perProjectTypes,omitempty"`
+	} `json:"per_project_types,omitempty"`
 }
 
 // RemoveRequest Remove a notification for the authenticated user

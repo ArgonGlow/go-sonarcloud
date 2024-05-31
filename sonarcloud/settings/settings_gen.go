@@ -11,14 +11,14 @@ type ListDefinitionsRequest struct {
 type ListDefinitionsResponse struct {
 	Definitions []struct {
 		Category     string   `json:"category,omitempty"`
-		DefaultValue string   `json:"defaultValue,omitempty"`
+		DefaultValue string   `json:"default_value,omitempty"`
 		Description  string   `json:"description,omitempty"`
 		Fields       []string `json:"fields,omitempty"`
 		Key          string   `json:"key,omitempty"`
-		MultiValues  bool     `json:"multiValues,omitempty"`
+		MultiValues  bool     `json:"multi_values,omitempty"`
 		Name         string   `json:"name,omitempty"`
 		Options      []string `json:"options,omitempty"`
-		SubCategory  string   `json:"subCategory,omitempty"`
+		SubCategory  string   `json:"sub_category,omitempty"`
 		Type         string   `json:"type,omitempty"`
 	} `json:"definitions,omitempty"`
 }
@@ -56,6 +56,6 @@ type ValuesResponse struct {
 		FieldValues []struct {
 			Boolean string `json:"boolean,omitempty"`
 			Text    string `json:"text,omitempty"`
-		} `json:"fieldValues,omitempty"`
+		} `json:"field_values,omitempty"`
 	} `json:"settings,omitempty"`
 }

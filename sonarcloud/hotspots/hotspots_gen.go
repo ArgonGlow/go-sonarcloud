@@ -28,7 +28,7 @@ type SearchRequest struct {
 type SearchResponse struct {
 	Components []struct {
 		Key          string `json:"key,omitempty"`
-		LongName     string `json:"longName,omitempty"`
+		LongName     string `json:"long_name,omitempty"`
 		Name         string `json:"name,omitempty"`
 		Organization string `json:"organization,omitempty"`
 		Path         string `json:"path,omitempty"`
@@ -38,22 +38,22 @@ type SearchResponse struct {
 		Assignee         string  `json:"assignee,omitempty"`
 		Author           string  `json:"author,omitempty"`
 		Component        string  `json:"component,omitempty"`
-		CreationDate     string  `json:"creationDate,omitempty"`
+		CreationDate     string  `json:"creation_date,omitempty"`
 		Key              string  `json:"key,omitempty"`
 		Line             float64 `json:"line,omitempty"`
 		Message          string  `json:"message,omitempty"`
 		Project          string  `json:"project,omitempty"`
-		RuleKey          string  `json:"ruleKey,omitempty"`
-		SecurityCategory string  `json:"securityCategory,omitempty"`
+		RuleKey          string  `json:"rule_key,omitempty"`
+		SecurityCategory string  `json:"security_category,omitempty"`
 		Status           string  `json:"status,omitempty"`
 		TextRange        struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
-		UpdateDate               string `json:"updateDate,omitempty"`
-		VulnerabilityProbability string `json:"vulnerabilityProbability,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
+		UpdateDate               string `json:"update_date,omitempty"`
+		VulnerabilityProbability string `json:"vulnerability_probability,omitempty"`
 	} `json:"hotspots,omitempty"`
 	Paging paging.Paging `json:"paging,omitempty"`
 }
@@ -67,7 +67,7 @@ func (r *SearchResponse) GetPaging() *paging.Paging {
 type SearchResponseAll struct {
 	Components []struct {
 		Key          string `json:"key,omitempty"`
-		LongName     string `json:"longName,omitempty"`
+		LongName     string `json:"long_name,omitempty"`
 		Name         string `json:"name,omitempty"`
 		Organization string `json:"organization,omitempty"`
 		Path         string `json:"path,omitempty"`
@@ -77,22 +77,22 @@ type SearchResponseAll struct {
 		Assignee         string  `json:"assignee,omitempty"`
 		Author           string  `json:"author,omitempty"`
 		Component        string  `json:"component,omitempty"`
-		CreationDate     string  `json:"creationDate,omitempty"`
+		CreationDate     string  `json:"creation_date,omitempty"`
 		Key              string  `json:"key,omitempty"`
 		Line             float64 `json:"line,omitempty"`
 		Message          string  `json:"message,omitempty"`
 		Project          string  `json:"project,omitempty"`
-		RuleKey          string  `json:"ruleKey,omitempty"`
-		SecurityCategory string  `json:"securityCategory,omitempty"`
+		RuleKey          string  `json:"rule_key,omitempty"`
+		SecurityCategory string  `json:"security_category,omitempty"`
 		Status           string  `json:"status,omitempty"`
 		TextRange        struct {
-			EndLine     float64 `json:"endLine,omitempty"`
-			EndOffset   float64 `json:"endOffset,omitempty"`
-			StartLine   float64 `json:"startLine,omitempty"`
-			StartOffset float64 `json:"startOffset,omitempty"`
-		} `json:"textRange,omitempty"`
-		UpdateDate               string `json:"updateDate,omitempty"`
-		VulnerabilityProbability string `json:"vulnerabilityProbability,omitempty"`
+			EndLine     float64 `json:"end_line,omitempty"`
+			EndOffset   float64 `json:"end_offset,omitempty"`
+			StartLine   float64 `json:"start_line,omitempty"`
+			StartOffset float64 `json:"start_offset,omitempty"`
+		} `json:"text_range,omitempty"`
+		UpdateDate               string `json:"update_date,omitempty"`
+		VulnerabilityProbability string `json:"vulnerability_probability,omitempty"`
 	} `json:"hotspots,omitempty"`
 }
 
@@ -105,41 +105,41 @@ type ShowRequest struct {
 type ShowResponse struct {
 	Assignee        string `json:"assignee,omitempty"`
 	Author          string `json:"author,omitempty"`
-	CanChangeStatus bool   `json:"canChangeStatus,omitempty"`
+	CanChangeStatus bool   `json:"can_change_status,omitempty"`
 	Changelog       []struct {
 		Avatar       string `json:"avatar,omitempty"`
-		CreationDate string `json:"creationDate,omitempty"`
+		CreationDate string `json:"creation_date,omitempty"`
 		Diffs        []struct {
 			Key      string `json:"key,omitempty"`
-			NewValue string `json:"newValue,omitempty"`
-			OldValue string `json:"oldValue,omitempty"`
+			NewValue string `json:"new_value,omitempty"`
+			OldValue string `json:"old_value,omitempty"`
 		} `json:"diffs,omitempty"`
-		IsUserActive bool   `json:"isUserActive,omitempty"`
+		IsUserActive bool   `json:"is_user_active,omitempty"`
 		User         string `json:"user,omitempty"`
-		UserName     string `json:"userName,omitempty"`
+		UserName     string `json:"user_name,omitempty"`
 	} `json:"changelog,omitempty"`
 	Comment []struct {
-		CreatedAt string `json:"createdAt,omitempty"`
-		HtmlText  string `json:"htmlText,omitempty"`
+		CreatedAt string `json:"created_at,omitempty"`
+		HtmlText  string `json:"html_text,omitempty"`
 		Key       string `json:"key,omitempty"`
 		Login     string `json:"login,omitempty"`
 		Markdown  string `json:"markdown,omitempty"`
 	} `json:"comment,omitempty"`
 	Component struct {
 		Key          string `json:"key,omitempty"`
-		LongName     string `json:"longName,omitempty"`
+		LongName     string `json:"long_name,omitempty"`
 		Name         string `json:"name,omitempty"`
 		Organization string `json:"organization,omitempty"`
 		Path         string `json:"path,omitempty"`
 		Qualifier    string `json:"qualifier,omitempty"`
 	} `json:"component,omitempty"`
-	CreationDate string  `json:"creationDate,omitempty"`
+	CreationDate string  `json:"creation_date,omitempty"`
 	Key          string  `json:"key,omitempty"`
 	Line         float64 `json:"line,omitempty"`
 	Message      string  `json:"message,omitempty"`
 	Project      struct {
 		Key          string `json:"key,omitempty"`
-		LongName     string `json:"longName,omitempty"`
+		LongName     string `json:"long_name,omitempty"`
 		Name         string `json:"name,omitempty"`
 		Organization string `json:"organization,omitempty"`
 		Qualifier    string `json:"qualifier,omitempty"`
@@ -147,11 +147,11 @@ type ShowResponse struct {
 	Rule struct {
 		Key                      string `json:"key,omitempty"`
 		Name                     string `json:"name,omitempty"`
-		SecurityCategory         string `json:"securityCategory,omitempty"`
-		VulnerabilityProbability string `json:"vulnerabilityProbability,omitempty"`
+		SecurityCategory         string `json:"security_category,omitempty"`
+		VulnerabilityProbability string `json:"vulnerability_probability,omitempty"`
 	} `json:"rule,omitempty"`
 	Status     string `json:"status,omitempty"`
-	UpdateDate string `json:"updateDate,omitempty"`
+	UpdateDate string `json:"update_date,omitempty"`
 	Users      []struct {
 		Active bool   `json:"active,omitempty"`
 		Login  string `json:"login,omitempty"`

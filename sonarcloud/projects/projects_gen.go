@@ -28,7 +28,7 @@ type BulkUpdateKeyResponse struct {
 	Keys []struct {
 		Duplicate bool   `json:"duplicate,omitempty"`
 		Key       string `json:"key,omitempty"`
-		NewKey    string `json:"newKey,omitempty"`
+		NewKey    string `json:"new_key,omitempty"`
 	} `json:"keys,omitempty"`
 }
 
@@ -71,7 +71,7 @@ type SearchRequest struct {
 type SearchResponse struct {
 	Components []struct {
 		Key              string `json:"key,omitempty"`
-		LastAnalysisDate string `json:"lastAnalysisDate,omitempty"`
+		LastAnalysisDate string `json:"last_analysis_date,omitempty"`
 		Name             string `json:"name,omitempty"`
 		Organization     string `json:"organization,omitempty"`
 		Qualifier        string `json:"qualifier,omitempty"`
@@ -90,7 +90,7 @@ func (r *SearchResponse) GetPaging() *paging.Paging {
 type SearchResponseAll struct {
 	Components []struct {
 		Key              string `json:"key,omitempty"`
-		LastAnalysisDate string `json:"lastAnalysisDate,omitempty"`
+		LastAnalysisDate string `json:"last_analysis_date,omitempty"`
 		Name             string `json:"name,omitempty"`
 		Organization     string `json:"organization,omitempty"`
 		Qualifier        string `json:"qualifier,omitempty"`

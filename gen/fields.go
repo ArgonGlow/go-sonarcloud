@@ -1,9 +1,10 @@
 package main
 
 import (
+	"sync"
+
 	. "github.com/dave/jennifer/jen"
 	"github.com/iancoleman/strcase"
-	"sync"
 )
 
 type FieldParser struct {
@@ -58,7 +59,7 @@ func (f *StringField) Render(tags bool) *Statement {
 	output := renderId(f.name).String()
 
 	if tags {
-		output.Add(Tag(map[string]string{"json": f.name + ",omitempty"}))
+		output.Add(Tag(map[string]string{"json": strcase.ToSnake(f.name) + ",omitempty"}))
 	}
 
 	return output
@@ -76,7 +77,7 @@ func (f *FloatField) Render(tags bool) *Statement {
 	output := renderId(f.name).Float64()
 
 	if tags {
-		output.Add(Tag(map[string]string{"json": f.name + ",omitempty"}))
+		output.Add(Tag(map[string]string{"json": strcase.ToSnake(f.name) + ",omitempty"}))
 	}
 
 	return output
@@ -94,7 +95,7 @@ func (f *BoolField) Render(tags bool) *Statement {
 	output := renderId(f.name).Bool()
 
 	if tags {
-		output.Add(Tag(map[string]string{"json": f.name + ",omitempty"}))
+		output.Add(Tag(map[string]string{"json": strcase.ToSnake(f.name) + ",omitempty"}))
 	}
 
 	return output
@@ -133,7 +134,7 @@ func (f *MapField) Render(tags bool) *Statement {
 
 	output := renderId(f.name).Struct(code...)
 	if tags {
-		output.Add(Tag(map[string]string{"json": f.name + ",omitempty"}))
+		output.Add(Tag(map[string]string{"json": strcase.ToSnake(f.name) + ",omitempty"}))
 	}
 
 	return output
@@ -201,7 +202,7 @@ func (f *SliceField) Render(tags bool) *Statement {
 	output := renderId(f.name).Index().Add(f.elem.Render(false))
 
 	if tags {
-		output.Add(Tag(map[string]string{"json": f.name + ",omitempty"}))
+		output.Add(Tag(map[string]string{"json": strcase.ToSnake(f.name) + ",omitempty"}))
 	}
 
 	return output
@@ -234,7 +235,7 @@ func (f *StatementField) Render(tags bool) *Statement {
 	output := renderId(f.name).Add(f.statement)
 
 	if tags {
-		output.Add(Tag(map[string]string{"json": f.name + ",omitempty"}))
+		output.Add(Tag(map[string]string{"json": strcase.ToSnake(f.name) + ",omitempty"}))
 	}
 
 	return output

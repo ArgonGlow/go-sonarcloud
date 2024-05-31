@@ -10,7 +10,7 @@ type GenerateRequest struct {
 
 // GenerateResponse is the response for GenerateRequest
 type GenerateResponse struct {
-	CreatedAt string `json:"createdAt,omitempty"`
+	CreatedAt string `json:"created_at,omitempty"`
 	Login     string `json:"login,omitempty"`
 	Name      string `json:"name,omitempty"`
 	Token     string `json:"token,omitempty"`
@@ -31,7 +31,7 @@ type SearchRequest struct {
 type SearchResponse struct {
 	Login      string `json:"login,omitempty"`
 	UserTokens []struct {
-		CreatedAt string `json:"createdAt,omitempty"`
+		CreatedAt string `json:"created_at,omitempty"`
 		Name      string `json:"name,omitempty"`
-	} `json:"userTokens,omitempty"`
+	} `json:"user_tokens,omitempty"`
 }

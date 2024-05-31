@@ -16,17 +16,17 @@ type ListRequest struct {
 // ListResponse is the response for ListRequest
 type ListResponse struct {
 	Branches []struct {
-		AnalysisDate string `json:"analysisDate,omitempty"`
+		AnalysisDate string `json:"analysis_date,omitempty"`
 		Commit       struct {
 			Sha string `json:"sha,omitempty"`
 		} `json:"commit,omitempty"`
-		IsMain      bool   `json:"isMain,omitempty"`
-		MergeBranch string `json:"mergeBranch,omitempty"`
+		IsMain      bool   `json:"is_main,omitempty"`
+		MergeBranch string `json:"merge_branch,omitempty"`
 		Name        string `json:"name,omitempty"`
 		Status      struct {
 			Bugs              float64 `json:"bugs,omitempty"`
-			CodeSmells        float64 `json:"codeSmells,omitempty"`
-			QualityGateStatus string  `json:"qualityGateStatus,omitempty"`
+			CodeSmells        float64 `json:"code_smells,omitempty"`
+			QualityGateStatus string  `json:"quality_gate_status,omitempty"`
 			Vulnerabilities   float64 `json:"vulnerabilities,omitempty"`
 		} `json:"status,omitempty"`
 		Type string `json:"type,omitempty"`

@@ -25,7 +25,7 @@ type CreateResponse struct {
 		Default      bool    `json:"default,omitempty"`
 		Description  string  `json:"description,omitempty"`
 		Id           float64 `json:"id,omitempty"`
-		MembersCount float64 `json:"membersCount,omitempty"`
+		MembersCount float64 `json:"members_count,omitempty"`
 		Name         string  `json:"name,omitempty"`
 		Organization string  `json:"organization,omitempty"`
 	} `json:"group,omitempty"`
@@ -59,7 +59,7 @@ type SearchResponse struct {
 		Default      bool    `json:"default,omitempty"`
 		Description  string  `json:"description,omitempty"`
 		Id           float64 `json:"id,omitempty"`
-		MembersCount float64 `json:"membersCount,omitempty"`
+		MembersCount float64 `json:"members_count,omitempty"`
 		Name         string  `json:"name,omitempty"`
 	} `json:"groups,omitempty"`
 	Paging paging.Paging `json:"paging,omitempty"`
@@ -76,7 +76,7 @@ type SearchResponseAll struct {
 		Default      bool    `json:"default,omitempty"`
 		Description  string  `json:"description,omitempty"`
 		Id           float64 `json:"id,omitempty"`
-		MembersCount float64 `json:"membersCount,omitempty"`
+		MembersCount float64 `json:"members_count,omitempty"`
 		Name         string  `json:"name,omitempty"`
 	} `json:"groups,omitempty"`
 }
