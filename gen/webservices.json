@@ -1,6 +1,35 @@
 {
     "webServices": [
         {
+            "path": "api/organization",
+            "description": "Configure an organization.",
+            "actions": [
+                {
+                    "key": "add_user",
+                    "description": "Add a user to an organization.<br>Requires the 'Administer' permission on the specified organization.",
+                    "internal": false,
+                    "post": true,
+                    "hasResponseExample": false,
+                    "changelog": [],
+                    "params": [
+                        {
+                            "key": "organization",
+                            "description": "Organization key",
+                            "required": true,
+                            "internal": false,
+                            "exampleValue": "my-org"
+                        },
+                        {
+                            "key": "login",
+                            "description": "User login",
+                            "required": true,
+                            "internal": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "path": "api/authentication",
             "description": "Handle authentication.",
             "actions": [
